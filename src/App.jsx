@@ -5,7 +5,6 @@ import Courses from "./pages/courses";
 import Register from "./pages/register";
 import { Routes, Route } from "react-router-dom";
 import Project from "./pages/project";
-import Contact from "./pages/contact";
 
 function App() {
   return (
@@ -13,9 +12,8 @@ function App() {
       <Header />
       <Sidebar />
       <Routes>
-        <Route path="/register" element={<Register />} />
+        <Route index element={<Register />} />
         <Route path="/project" element={<Project />} />
-        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </div>
